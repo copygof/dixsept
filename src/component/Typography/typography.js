@@ -5,7 +5,7 @@ import styles from './styles'
 
 const withStyle = style => {
   const Typography = ({ title, color }) => (
-    <Text style={[style, { color }]}>{title}</Text>
+    <Text style={[style, color && { color }]}>{title}</Text>
   )
   Typography.propTypes = {
     title: PropTypes.string,
