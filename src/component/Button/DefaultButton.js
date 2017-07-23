@@ -1,24 +1,28 @@
 import React from 'react'
 import { Platform, TouchableOpacity, Text, View, TouchableNativeFeedback } from 'react-native'
 import PropTypes from 'prop-types'
+import styles from './styles'
 
 const Touchable = Platform.select({
   ios: TouchableOpacity,
   android: TouchableNativeFeedback
 })
 
-const Button = ({ onPress, children }) => (
+const DefaultButton = ({ onPress, children, width }) => (
   <Touchable onPress={onPress}>
-    {children}
+    <View style={[styles.button, { width }]}>
+      {children}
+    </View>
   </Touchable>
 )
 
-Button.propTypes = {
+DefaultButton.propTypes = {
   onPress: PropTypes.func,
-  children: PropTypes.element
+  children: PropTypes.element,
+  width: PropTypes.number,
 }
-Button.propTypes = {
-  onPress: '',
+DefaultButton.propTypes = {
+  onPress: () => {},
 }
 
-export default Button
+export default DefaultButton

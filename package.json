@@ -11,7 +11,8 @@
     "react": "16.0.0-alpha.12",
     "react-native": "0.46.3",
     "react-native-interactable": "0.0.9",
-    "react-native-scrollable-tab-view": "^0.6.7"
+    "react-native-scrollable-tab-view": "^0.6.7",
+    "react-navigation": "^1.0.0-beta.11"
   },
   "devDependencies": {
     "babel-jest": "20.0.3",
@@ -23,5 +24,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "rnpm": {
+    "assets": [
+      "./src/assets/fonts/"
+    ]
   }
 }

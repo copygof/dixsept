@@ -10,8 +10,8 @@ import {
   StyleSheet,
   Text,
   View
-} from 'react-native';
-import { Profile } from './src/page'
+} from 'react-native'
+import Typepography from './src/screen/demo/Typography'
 
 
-AppRegistry.registerComponent('dixsept', () => Profile)
+AppRegistry.registerComponent('dixsept', () => Typepography)
