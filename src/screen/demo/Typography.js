@@ -16,7 +16,7 @@ import {
 import { Button } from '../../component/Button'
 
 const Typepography = () => (
-  <View style={{ paddingVertical: 30 }}>
+  <View style={{ paddingVertical: 15 }}>
     <ScrollView style={{ paddingHorizontal: 15 }}>
       <Button title="My Button" />
       <Display1 title="Display1" />

@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native'
-import Typepography from './src/screen/demo/Typography'
+import Router from './src/router'
 
 
-AppRegistry.registerComponent('dixsept', () => Typepography)
+AppRegistry.registerComponent('dixsept', () => Router)

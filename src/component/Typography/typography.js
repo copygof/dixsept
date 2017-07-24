@@ -4,12 +4,19 @@ import PropTypes from 'prop-types'
 import styles from './styles'
 
 const withStyle = style => {
-  const Typography = ({ title, color }) => (
-    <Text style={[style, color && { color }]}>{title}</Text>
+  const Typography = ({ title, color, children }) => (
+    <Text style={[style, color && { color }]}>
+      {title}
+      {children}
+    </Text>
   )
   Typography.propTypes = {
     title: PropTypes.string,
     color: PropTypes.string,
+    children: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.elements
+    ])
   }
   Typography.defaultProps = {
     title: '',
